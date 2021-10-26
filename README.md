@@ -1,24 +1,42 @@
-# json-server-base
+## Get users:
+Get http://localhost:3001/users 
 
-Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Capstones do Q2.
+## Create account: 
+Post http://localhost:3001/register
+{
+	"email": "kenzinho@mail.com",
+	"password": "123456",
+	"name": "Kenzinho",
+	"age": 38,
+}
 
-## Endpoints
+## Login: 
+Post http://localhost:3001/login
+{
+	"email": "abcd@abcd.com",
+	"password": "123456"
+}
 
-Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/package/json-server-auth), existem 3 endpoints que podem ser utilizados para cadastro e 2 endpoints que podem ser usados para login.
+## New pokemon: 
+Post http://localhost:3001/pokemon 
+Authorization: Bearer 
+{
+	"type": "fairy",
+	"name": "gardevoir",
+	"userId": 2
+}
 
-### Cadastro
+## Get all pokemons: 
+Get http://localhost:3001/pokemon
 
-POST /register <br/>
-POST /signup <br/>
-POST /users
+## Set level: 
+Post http://localhost:3001/level,
+Authorization: Bearer 
+{
+	"level": 550,
+	"userId": 2
+}
 
-Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
-Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
-
-
-### Login
-
-POST /login <br/>
-POST /signin
-
-Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+## View level: 
+Post http://localhost:3001/level,
+Authorization: Bearer 

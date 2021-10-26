@@ -6,6 +6,35 @@
       "name": "Kenzinho",
       "age": 38,
       "id": 1
+    },
+    {
+      "email": "abcd@abcd.com",
+      "password": "$2a$10$TqjqSCECxjuygrb0FUZLSehzItFau6C5B3v2wmJbF4YmrikbQF/vm",
+      "name": "abcd",
+      "age": 1000,
+      "id": 2
+    },
+    {
+      "email": "chris@chris.com",
+      "password": "$2a$10$/wS6ghifmRMBWkGTteu34eR9.VUB.PX3pWz2ugbD5j3XT4b.FbEja",
+      "name": "chris",
+      "age": 23,
+      "id": 3
+    }
+  ],
+  "pokemon": [
+    {
+      "type": "fairy",
+      "name": "gardevoir",
+      "userId": 2,
+      "id": 2
+    }
+  ],
+  "level": [
+    {
+      "level": 550,
+      "userId": 2,
+      "id": 1
     }
   ]
 }
