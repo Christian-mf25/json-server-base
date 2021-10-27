@@ -1,8 +1,8 @@
 ## Get users:
-Get http://localhost:3001/users 
+Get https://kenziemon.herokuapp.com/users 
 
 ## Create account: 
-Post http://localhost:3001/register
+Post https://kenziemon.herokuapp.com/register
 {
 	"email": "kenzinho@mail.com",
 	"password": "123456",
@@ -11,14 +11,14 @@ Post http://localhost:3001/register
 }
 
 ## Login: 
-Post http://localhost:3001/login
+Post https://kenziemon.herokuapp.com/login
 {
 	"email": "abcd@abcd.com",
 	"password": "123456"
 }
 
 ## New pokemon: 
-Post http://localhost:3001/pokemon 
+Post https://kenziemon.herokuapp.com/pokemon 
 Authorization: Bearer 
 {
 	"type": "fairy",
@@ -27,10 +27,10 @@ Authorization: Bearer
 }
 
 ## Get all pokemons: 
-Get http://localhost:3001/pokemon
+Get https://kenziemon.herokuapp.com/pokemon
 
 ## Set level: 
-Post http://localhost:3001/level,
+Post https://kenziemon.herokuapp.com/level,
 Authorization: Bearer 
 {
 	"level": 550,
@@ -38,5 +38,5 @@ Authorization: Bearer
 }
 
 ## View level: 
-Post http://localhost:3001/level,
+Post https://kenziemon.herokuapp.com/level,
 Authorization: Bearer 
