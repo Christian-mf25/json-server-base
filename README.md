@@ -1,5 +1,5 @@
 ## Get users:
-Get https://kenziemon.herokuapp.com/users 
+Get https://kenziemon.herokuapp.com/users
 
 ## Create account: 
 Post https://kenziemon.herokuapp.com/register
